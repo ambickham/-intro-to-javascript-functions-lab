@@ -58,7 +58,39 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-const isCharAVowel = (char) => {
-    return ['a', 'e', 'i', 'o','u'].includes(char.toLowerCase());
+// const isCharAVowel = (char) => {
+//     return ['a', 'e', 'i', 'o','u'].includes(char.toLowerCase());
+// };
+// console.log('Exercise 3 Result:', isCharAVowel("a"));
+
+/*
+Exercise 4: generateEmail()
+
+Create a function named generateEmail. It should take two strings: 
+a name and a domain. It should return a simple email address.
+
+Example: generateEmail('johnsmith', 'example.com') 
+should return 'johnsmith@example.com'.
+
+Complete the exercise in the space below:
+*/
+
+// 1. Define the function, and it will take name and domain parameters.
+/* Issue Fixed 
+1) Added equal between generateEmail = (name, domain)
+2) Remove ('name', 'domain') to (name, domain)
+3) added ; end of line 85 and 86 */
+
+const generateEmail = (name, domain) => {
+    return `${name}@${domain}`;  
 };
-console.log('Exercise 3 Result:', isCharAVowel("a"));
+
+// 2. Call the function
+/* Issue Fixed
+1) Added a call function, needed this second step since I was only defining it. 
+2) Repalced the reference name and domain with the specific values. 
+3) Created a variable const email, which is holding the result of the function call which I have created. */
+const email = generateEmail('johnsmith', 'example.com');
+console.log(email);
+console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+
