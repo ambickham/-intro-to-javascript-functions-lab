@@ -59,7 +59,6 @@ Complete the exercise in the space below:
 */
 
 const isCharAVowel = (char) => {
-    ['a', 'e', 'i", 'o', 'u'].includes(char.toLowerCase))():
-}
-
+    return ['a', 'e', 'i', 'o','u'].includes(char.toLowerCase());
+};
 console.log('Exercise 3 Result:', isCharAVowel("a"));
