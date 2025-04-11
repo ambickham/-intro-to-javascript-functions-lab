@@ -101,19 +101,34 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 //1) Defining Function 
-const greetUser = (user,timeOfDay) => {
-    return `Good ${timeOfDay}, ${user}`
-    }
-//  2) Calling function 
-const mornGreet = greetUser('Meeta', 'morning');
-const aftGreet = greetUser('Meeta', 'afternoon');
-const nightGreet = greetUser('Meeta', 'night');
+// const greetUser = (user,timeOfDay) => {
+//     return `Good ${timeOfDay}, ${user}`
+//     }
+// //  2) Calling function 
+// const mornGreet = greetUser('Meeta', 'morning');
+// const aftGreet = greetUser('Meeta', 'afternoon');
+// const nightGreet = greetUser('Meeta', 'night');
 
-// 3) Printing Funciton 
-console.log(mornGreet);
-console.log(aftGreet);
-console.log(nightGreet);
-console.log('Exercise 5 Result:', greetUser("Meeta", "morning"));
+// // 3) Printing Funciton 
+// console.log(mornGreet);
+// console.log(aftGreet);
+// console.log(nightGreet);
+// console.log('Exercise 5 Result:', greetUser("Meeta", "morning"));
 
-/* Issues found and resolved: Need to pay attention to th back ticks, especially in the #1 Definging a function. Remeber to call a function. Remember to console.log using the new variable that is set. 
+// /* Issues found and resolved: Need to pay attention to th back ticks, especially in the #1 Definging a function. Remeber to call a function. Remember to console.log using the new variable that is set. 
 
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+
+const maxOfThree = (num1, num2, num3) => {
+    return Math.max(num1, num2, num3);
+};
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
