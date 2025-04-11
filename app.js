@@ -63,7 +63,7 @@ Complete the exercise in the space below:
 // };
 // console.log('Exercise 3 Result:', isCharAVowel("a"));
 
-/*
+/*------------------------------------------------
 Exercise 4: generateEmail()
 
 Create a function named generateEmail. It should take two strings: 
@@ -72,25 +72,48 @@ a name and a domain. It should return a simple email address.
 Example: generateEmail('johnsmith', 'example.com') 
 should return 'johnsmith@example.com'.
 
+// Complete the exercise in the space below:
+1. Define the function, and it will take name and domain parameters.
+ /* Issue Fixed : 1) Added equal between generateEmail = (name, domain) 2) Remove ('name', 'domain') to (name, domain) 3) added ; end of line 85 and 86 */
+
+// const generateEmail = (name, domain) => {
+//     return `${name}@${domain}`;  
+// };
+
+// // 2. Call the function
+// /* Issue Fixed: 1) Added a call function, needed this second step since I was only defining it. 2) Repalced the reference name and domain with the specific values. 3) Created a variable const email, which is holding the result of the function call which I have created. */
+
+// const email = generateEmail('johnsmith', 'example.com');
+// console.log(email);
+// console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+
+
+/*
+-----------------------------
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+
 Complete the exercise in the space below:
 */
+//1) Defining Function 
+const greetUser = (user,timeOfDay) => {
+    return `Good ${timeOfDay}, ${user}`
+    }
+//  2) Calling function 
+const mornGreet = greetUser('Meeta', 'morning');
+const aftGreet = greetUser('Meeta', 'afternoon');
+const nightGreet = greetUser('Meeta', 'night');
 
-// 1. Define the function, and it will take name and domain parameters.
-/* Issue Fixed 
-1) Added equal between generateEmail = (name, domain)
-2) Remove ('name', 'domain') to (name, domain)
-3) added ; end of line 85 and 86 */
+// 3) Printing Funciton 
+console.log(mornGreet);
+console.log(aftGreet);
+console.log(nightGreet);
+console.log('Exercise 5 Result:', greetUser("Meeta", "morning"));
 
-const generateEmail = (name, domain) => {
-    return `${name}@${domain}`;  
-};
-
-// 2. Call the function
-/* Issue Fixed
-1) Added a call function, needed this second step since I was only defining it. 
-2) Repalced the reference name and domain with the specific values. 
-3) Created a variable const email, which is holding the result of the function call which I have created. */
-const email = generateEmail('johnsmith', 'example.com');
-console.log(email);
-console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+/* Issues found and resolved: Need to pay attention to th back ticks, especially in the #1 Definging a function. Remeber to call a function. Remember to console.log using the new variable that is set. 
 
