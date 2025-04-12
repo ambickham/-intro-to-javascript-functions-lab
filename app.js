@@ -125,10 +125,32 @@ and return the largest among them.
 
 Example: maxOfThree(17, 4, 9) should return 17.
 
+// Complete the exercise in the space below:
+// */
+
+// const maxOfThree = (num1, num2, num3) => {
+//     return Math.max(num1, num2, num3);
+// };
+// console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+
+/*
+Exercise 7: calculateTip()
+
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
+
+Example: calculateTip(50, 20) should return 10.
+
 Complete the exercise in the space below:
 */
+// Note: Great job on knowing to use key words bill and tip percentage, go me! 
+// 1) Define function 
+const calculateTip = (bill, tipPercent) => {
+    return bill*(tipPercent)/100 // Issue here was the equation needs to be a mathematical equation, not a template literal that I originally used. 
+}
+// 2. Calling the Function (Don't forget to call the function, Here calling is to set what the bill is and the percent. Which I did, but I don't need the quotes.
+const amountTip = calculateTip(50.00, 20);
 
-const maxOfThree = (num1, num2, num3) => {
-    return Math.max(num1, num2, num3);
-};
-console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+//3. Consol log function 
+console.log('Exercise 7 Result:', calculateTip(50, 20)); 
