@@ -154,3 +154,32 @@ const amountTip = calculateTip(50.00, 20);
 
 //3. Consol log function 
 console.log('Exercise 7 Result:', calculateTip(50, 20)); 
+
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+
+//1 Define Function
+// Error here was that, instead of setting C and and F in (Ct, c, f) the C and F are "scale"
+//Yay the const format and characters are all in the correct position. 
+const convertTemperature = (currentTemp, scale) => {
+    if (scale === 'C') {
+        return currentTemp * 9/5 + 32; // This will convert to F
+    }   else if (scale === 'F') {
+            return (currentTemp - 32) * 5/9; // Converts to C
+    } else {
+            return 'Invalid scale'
+    }
+}
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+// Issues corrected: Theres no ; after if or else if condition. Pay attention to spellings. 
